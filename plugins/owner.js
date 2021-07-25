@@ -8,7 +8,7 @@ const GIT = "it sends links"
 
 const Config = require('../config');
 
-if (Config.WORKTYPE == 'private') {
+if (Config.WORKTYPE == 'public') {
 
         asena.addCommand({pattern: 'owner', fromMe: true, deleteCommand: true, desc: OWNER,}, (async (message, match) => {
 
