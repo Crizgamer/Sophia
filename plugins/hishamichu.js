@@ -20,7 +20,7 @@ const Language = require('../language');
 
 const Lang = Language.getString('weather');
 
-if (Config.WORKTYPE == 'private') {
+if (Config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'sophia ?(.*)', fromMe: true, desc: Lang.BOT_DESC}, async (message, match) => {
 
