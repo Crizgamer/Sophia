@@ -8,7 +8,7 @@ const axios = require('axios');
 const EFFECT_DESC = "Set of commands to convert text into effective images."
 const NEED_WORD = "*You Must Enter a Word*"
 
-if (Config.WORKTYPE == 'private') {
+if (Config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'effectimg', fromMe: true, desc: EFFECT_DESC}, (async (message, match) => {    
 
