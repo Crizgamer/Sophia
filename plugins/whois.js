@@ -9,7 +9,7 @@ const CON = require('../config');
 const Language = require('../language'); 
 const Lang = Language.getString('whois'); // Language Support
 
-if (CON.WORKTYPE == 'private') {
+if (CON.WORKTYPE == 'public') {
 
     Asena.addCommand({ pattern: 'whois', fromMe: true, desc: Lang.PL_DESC }, async (message, match) => { 
 
