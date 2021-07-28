@@ -833,7 +833,7 @@ Asena.addCommand({pattern: 'grass ?(.*)', fromMe: false, dontAddCommandList: tru
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/romancetext/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Made by LiyaMol'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.imakge, {mimetype: Mimetype.jpg, caption: 'Made by LiyaMol'})
 
     }));
 
